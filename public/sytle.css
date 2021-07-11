@@ -1,0 +1,33 @@
+.main{
+    background-color: #151515;
+    height: 969px;
+    width: 100%;
+}
+
+.calculatorClass{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,115px);
+    gap:0px;
+    color: white;
+    background-color: black;
+    width: 400px;
+    height: 690px;
+}
+
+.display{
+    grid-column: 1/5;
+    grid-row: 1;
+}
+
+.EqualButtonDiv{
+    grid-column: 4;
+    grid-row: 3/7;
+    height: 460px;
+    width: 100px;
+}
+
+.ResetButtonDiv{
+    grid-column: 2/4;
+    grid-row: 6;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./public/sytle.css">
+
+    </head>
+    <body>
+        <div id="root" class="main">
+            <div id="Calculator" class="calculatorClass">
+                <div id="display" class="display">
+                    <input type="text" id="calculator-screen" class="calculator-screen" style="background-color: black; height: 115px; width: 400px; color: white; font-size: 40px; " value="" disabled />
+                </div>
+
+                <div class="ButtonAdd">
+                    <button
+                    id="OperatorAdd" 
+                    class="btn btn-warning" 
+                    style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;"
+                    data-action="add"
+                    value="+"
+                    >+
+                    </button>
+
+                </div>
+
+                <div class="ButtonSub">
+                    <button 
+                    id="OperatorSub" 
+                    class="btn btn-warning" 
+                    style="height: 115px; width: 100px; border: 3px solid black;  font-size: 40px;"
+                    data-action="sub"
+                    value="-"
+                    >-</button>
+
+                </div>
+
+                <div  class="ButtonMul">
+                    <button 
+                    id="OperatorMul" 
+                    class="btn btn-warning" 
+                    style="height: 115px; width: 100px; border: 3px solid black;  font-size: 40px;"
+                    data-action="mul"
+                    value="x"
+                    >x</button>
+
+                </div>
+
+                <div  class="ButtonDiv">
+                    <button 
+                    id="OperatorDiv" 
+                    class="btn btn-warning" 
+                    style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;"
+                    data-action="div"
+                    value="/"
+                    >/</button>
+                    
+                </div>
+                <div id="Number7Div" class="Number">
+                    <button id="Number7" class="btn btn-warning" value="7" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">7</button>
+
+                </div>
+
+                <div id="Number8Div" class="Number">
+                    <button id="Number8" class="btn btn-warning" value="8" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">8</button>
+
+                </div>
+
+                <div id="Number9Div" class="Number">
+                    <button id="Number9" class="btn btn-warning" value="9" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">9</button>
+
+                </div>
+
+                <div id="Number4Div" class="Number">
+                    <button id="Number4" class="btn btn-warning" value="4" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">4</button>
+
+                </div>
+
+                <div id="Number5Div" class="Number">
+                    <button id="Number5" class="btn btn-warning" value="5" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">5</button>
+
+                </div>
+
+                <div id="Number6Div" class="Number">
+                    <button id="Number6" class="btn btn-warning" value="6" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">6</button>
+
+                </div>
+
+                <div id="Number1Div" class="Number">
+                    <button id="Number1" class="btn btn-warning" value="1" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">1</button>
+
+                </div>
+
+                <div id="Number2Div" class="Number">
+                    <button id="Number2" class="btn btn-warning" value="2" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">2</button>
+
+                </div>
+
+                <div id="Number3Div" class="Number">
+                    <button id="Number3" class="btn btn-warning" value="3" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;">3</button>
+
+                </div>
+
+                <div id="Number0Div" class="Number">
+                    <button id="Number0" class="btn btn-warning" value="0" style="height: 115px; width: 100px; border: 3px solid black; font-size: 40px;"> 0 </button>
+                </div>
+
+                <div id="ResetButtonDiv" class="ResetButton">
+                    <button id="ResetButton" class="btn btn-warning" 
+                    style="height: 115px; width: 200px; border: 3px solid black; font-size: 40px;"
+                    data-action="reset"
+                    > C </button>
+                </div>
+
+                <div id="EqualButtonDiv" class="EqualButtonDiv">
+                    <button id="EqualButton" class="btn btn-warning" 
+                    style="height: 460px; width: 100px; border: 3px solid black; background-color: rgb(236,236,236); font-size: 50px;"
+                    data-action="calculate"
+                    value="="
+                    > = </button>
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Javascript-->
+        <script type="text/javascript" src="./public/index.js"></script>
+
+    </body>
+</html>
